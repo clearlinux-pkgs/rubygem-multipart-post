@@ -4,7 +4,7 @@
 #
 Name     : rubygem-multipart-post
 Version  : 2.0.0
-Release  : 4
+Release  : 5
 URL      : https://rubygems.org/downloads/multipart-post-2.0.0.gem
 Source0  : https://rubygems.org/downloads/multipart-post-2.0.0.gem
 Summary  : No detailed summary available
