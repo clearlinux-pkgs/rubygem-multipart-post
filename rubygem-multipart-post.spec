@@ -4,7 +4,7 @@
 #
 Name     : rubygem-multipart-post
 Version  : 2.0.0
-Release  : 5
+Release  : 6
 URL      : https://rubygems.org/downloads/multipart-post-2.0.0.gem
 Source0  : https://rubygems.org/downloads/multipart-post-2.0.0.gem
 Summary  : No detailed summary available
@@ -51,66 +51,28 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
 pushd %{buildroot}%{gem_dir}/gems/multipart-post-2.0.0
-ruby -v -I"lib:test" test*/test_*.rb
+ruby -v -I.:lib:test test*/test_*.rb
 popd
 
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/multipart-post-2.0.0.gem
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/CompositeReadIO/advance_io-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/CompositeReadIO/cdesc-CompositeReadIO.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/CompositeReadIO/current_io-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/CompositeReadIO/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/CompositeReadIO/read-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/CompositeReadIO/rewind-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/MultipartPost/cdesc-MultipartPost.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Multipartable/cdesc-Multipartable.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Multipartable/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Net/HTTP/Post/Multipart/cdesc-Multipart.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Net/HTTP/Post/cdesc-Post.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Net/HTTP/Put/Multipart/cdesc-Multipart.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Net/HTTP/Put/cdesc-Put.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Net/HTTP/cdesc-HTTP.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Net/cdesc-Net.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/EpiloguePart/cdesc-EpiloguePart.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/EpiloguePart/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/FilePart/build_head-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/FilePart/cdesc-FilePart.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/FilePart/length-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/FilePart/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/ParamPart/build_part-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/ParamPart/cdesc-ParamPart.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/ParamPart/length-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/ParamPart/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/Part/cdesc-Part.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/Parts/cdesc-Parts.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/cdesc-UploadIO.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/content_type-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/convert%21-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/io-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/local_path-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/method_missing-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/opts-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/original_filename-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/UploadIO/respond_to%3f-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/multipart-post-2.0.0/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/.gitignore
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/.travis.yml
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/Gemfile
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/History.txt
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/Manifest.txt
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/README.md
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/lib/composite_io.rb
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/lib/multipart_post.rb
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/lib/multipartable.rb
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/lib/net/http/post/multipart.rb
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/lib/parts.rb
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/multipart-post.gemspec
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/test/multibyte.txt
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/test/net/http/post/test_multipart.rb
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/test/test_composite_io.rb
-/usr/lib64/ruby/gems/2.2.0/gems/multipart-post-2.0.0/test/test_parts.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/multipart-post-2.0.0.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/multipart-post-2.0.0.gem
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/.gitignore
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/.travis.yml
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/Gemfile
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/History.txt
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/Manifest.txt
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/README.md
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/lib/composite_io.rb
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/lib/multipart_post.rb
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/lib/multipartable.rb
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/lib/net/http/post/multipart.rb
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/lib/parts.rb
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/multipart-post.gemspec
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/test/multibyte.txt
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/test/net/http/post/test_multipart.rb
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/test/test_composite_io.rb
+/usr/lib64/ruby/gems/2.3.0/gems/multipart-post-2.0.0/test/test_parts.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/multipart-post-2.0.0.gemspec
